@@ -61,6 +61,11 @@ nav a {
   color: var(--muted);
 }
 
+nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
 main {
   width: min(860px, calc(100% - 48px));
   margin: 0 auto 72px;
@@ -69,6 +74,10 @@ main {
 .intro {
   padding: 56px 0 34px;
   border-bottom: 1px solid var(--line);
+}
+
+.page-title {
+  padding: 48px 0 24px;
 }
 
 h1 {
@@ -82,7 +91,8 @@ h1 {
   font-weight: 600;
 }
 
-.intro p {
+.intro p,
+.page-title p {
   max-width: 720px;
   margin: 4px 0;
   color: var(--muted);
